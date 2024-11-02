@@ -5,6 +5,12 @@
 #include <string>
 #include <vector>
 
+struct Date {
+    uint8_t day;
+    uint8_t month;
+    uint16_t year;
+};
+
 class Film {
     
     private :
@@ -14,17 +20,14 @@ class Film {
         std::string title;
         uint8_t duration;
         std::string movieGenre;
-        struct releaseDate {
-            uint8_t jour;
-            uint8_t mois;
-            uint16_t annee;
-        };
+        Date releaseDate;
         uint8_t minimumAge;
         std::string filmDescription;
         std::string filmDirector;
         std::vector<std::string> mainActors;
-        uint8_t rating;
-        uint16_t screeningRoomSeats;
+        static uint8_t rating;
+        static uint8_t countOfRating;
+        uint16_t seatsAvailable;
         uint16_t reservedPlaces;
 
     public:
@@ -36,18 +39,18 @@ class Film {
         /*********************/
         /****** methods ******/
         /*********************/
-        
+
         //getters
         std::string getTitle();
         uint8_t getDuration();
         std::string getMovieGenre();
-        struct releaseDate getReleaseDate();
+        Date getReleaseDate();
         uint8_t getMinimumAge();
         std::string getFilmDescription();
         std::string getFilmDirector();
         std::vector<std::string> getMainActors();
         uint8_t getRating();
-        uint16_t getScreeningRoomSeats();
+        uint16_t getSeatsAvailable();
         uint16_t getReservedPlaces();
 
         //setters

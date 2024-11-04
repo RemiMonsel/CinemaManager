@@ -1,9 +1,12 @@
 #include <iostream>
 #include "../include/cinema/Film.h"
+#include "../include/cinema/Room.h"
 
 int main()
 {
-    //Creation of new movies
+    /**********************************/
+    /***** Creation of new movies *****/
+    /**********************************/
     Film spidermanMovie("Spider-Man : No Way Home", 150, "Action");
     Film inceptionMovie("Inception", 148, "Science-Fiction");
     Film harryPotterMovie("Harry Potter and the Philosopher's Stone", 152, "Fantasy", {5U,12U,2001U});
@@ -16,6 +19,16 @@ int main()
     std::cout << "Movie release date is : " << spidermanMovie.getReleaseDate() << std::endl <<std::endl;
 
     harryPotterMovie.showDetails();
+
+    /*******************************************/
+    /***** Creation of new screening rooms *****/
+    /*******************************************/
+    Room roomA(1U, "RoomA", 150U);
+
+    roomA.showDetails();
+
+    roomA.setActualMovie(spidermanMovie.getTitle());
+    roomA.showDetails();
 
     return 0;
 }

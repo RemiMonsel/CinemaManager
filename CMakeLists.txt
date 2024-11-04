@@ -1,17 +1,20 @@
-cmake_minimum_required(VERSION 3.10)  # Version minimale requise de CMake
-project(CinemaManagement)               # Nom du projet
+cmake_minimum_required(VERSION 3.10)    # Minimal Version required for CMake
+project(CinemaManagement)               # Project name
 
-# Choisir la version de C++
-set(CMAKE_CXX_STANDARD 17)              # Utiliser le standard C++17
-set(CMAKE_CXX_STANDARD_REQUIRED ON)     # Rendre le standard C++ requis
+# Choose C++ version
+set(CMAKE_CXX_STANDARD 17)              # Use STD C++17
+set(CMAKE_CXX_STANDARD_REQUIRED ON)     # Make required the standard C++
 
-# Ajouter les répertoires d'inclusion
-include_directories(include)             # Dossier pour les fichiers d'en-tête
+# Add inclusion directories
+include_directories(include)            # Header folder
 
-# Ajouter un exécutable
-add_executable(cinemaApp src/main.cpp)  # Nom de l'exécutable et fichier source principal
+# Add executable
+add_executable(cinemaApp src/main.cpp)  # Name of the executable
 
-# Ajouter les fichiers source
+# Add source files
 target_sources(cinemaApp PRIVATE
-    src/cinema/Film.cpp                   # Fichier source de la classe Film
+    src/cinema/Film.cpp                 # Add Film class as a source file
+)
+target_sources(cinemaApp PRIVATE
+    src/cinema/Room.cpp                 # Add Room class as a source file
 )

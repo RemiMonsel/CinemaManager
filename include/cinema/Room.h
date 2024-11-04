@@ -19,7 +19,7 @@ class Room {
 
     public:
         //constructors
-        Salle();
+        Room(uint8_t myIdRoom, std::string myRoomName, uint16_t mySeatCapacity, std::vector<std::string> myEquipments = {}, std::string myActualMovie = "None");
 
         /*********************/
         /****** methods ******/
@@ -41,8 +41,7 @@ class Room {
         void addEquipments(std::string equipment);
         void removeEquipments(std::string equipment);
         bool isAvailable();
-
-
+        void showDetails();
 };
 
 #endif

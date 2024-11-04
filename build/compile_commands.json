@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/remim/Documents/ProjetGestionCinema/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/cinemaApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\cinemaApp.dir\\src\\main.cpp.obj -c C:\\Users\\remim\\Documents\\ProjetGestionCinema\\src\\main.cpp",
+  "file": "C:/Users/remim/Documents/ProjetGestionCinema/src/main.cpp",
+  "output": "CMakeFiles/cinemaApp.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/remim/Documents/ProjetGestionCinema/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/cinemaApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\cinemaApp.dir\\src\\cinema\\Film.cpp.obj -c C:\\Users\\remim\\Documents\\ProjetGestionCinema\\src\\cinema\\Film.cpp",
+  "file": "C:/Users/remim/Documents/ProjetGestionCinema/src/cinema/Film.cpp",
+  "output": "CMakeFiles/cinemaApp.dir/src/cinema/Film.cpp.obj"
+}
+]

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 #include "../../include/cinema/Film.h"
 
@@ -11,9 +12,22 @@ uint8_t Film::countOfRating = 0;
 /**********************/
 
 // default constructors
-Film::Film()
-{
+Film::Film(std::string movieTitle, uint8_t movieDuration, std::string filmGenre){
+    title = movieTitle;
+    duration = movieDuration;
+    movieGenre = filmGenre;
+}
 
+Film::Film(std::string movieTitle, uint8_t movieDuration, std::string filmGenre, Date movieReleaseDate,
+           uint8_t movieMinimumAge, std::string myFilmDescription, std::string myFilmDirector, std::vector<std::string> myMainActors){
+    title = movieTitle;
+    duration = movieDuration;
+    movieGenre = filmGenre;
+    releaseDate = movieReleaseDate;
+    minimumAge = movieMinimumAge;
+    filmDescription = myFilmDescription;
+    filmDirector = myFilmDirector;
+    mainActors = myMainActors;
 }
 
 /*********************/
@@ -36,9 +50,13 @@ std::string Film::getMovieGenre()
     return movieGenre;
 }
 
-Date Film::getReleaseDate()
+std::string Film::getReleaseDate()
 {
-    return Film::releaseDate;
+    std::ostringstream dateToString;
+    dateToString << std::setw(2) << std::setfill('0') << static_cast<int>(releaseDate.day) << "/"
+                 << std::setw(2) << std::setfill('0') << static_cast<int>(releaseDate.month) << "/"
+                 << releaseDate.year;
+    return dateToString.str();
 }
 
 uint8_t Film::getMinimumAge()
@@ -83,6 +101,11 @@ void Film::setRating(uint8_t myRating)
     rating = (rating + myRating)/ countOfRating;
 }
 
+void Film::setReleaseDate(Date myReleaseDate)
+{
+    releaseDate = myReleaseDate;
+}
+
 // Other methods
 void Film::reservePlaces(int8_t numOfPlaces)
 {
@@ -99,16 +122,23 @@ void Film::cancelReservationOfPlaces(int8_t numOfPlacesToCancel)
 void Film::showDetails()
 {
     std::cout << "Movie title is : " << title << std::endl;
-    std::cout << "The movie lasts " << duration << " minutes" << std::endl;
-    std::cout << "Movie genre is : " << movieGenre << std::endl;
-    std::cout << "Release date is : " << releaseDate.day << "/" << releaseDate.month << "/" << releaseDate.year << std::endl;
-    std::cout << "Minimum age for this movie is : " << minimumAge << std::endl;
-    std::cout << "The movie description is : " << filmDescription << std::endl;
-    std::cout << "Film director is : " << filmDirector << std::endl;
-    mainActors.size() == 0 ? std::cout << "Main actors is : " : std::cout << "Main actors are : ";
-    for(uint8_t i = 0; i < mainActors.size(); i++)
+    std::cout << "The movie lasts " << static_cast<int>(duration) << " minutes" << std::endl;
+    std::cout << title << "duration is : " << static_cast<int>(getDuration()) << " minutes" << std::endl;
+    std::cout << title << " release date is : " << getReleaseDate() << std::endl;
+    std::cout << "Minimum age for " << title << " is : " << static_cast<int>(minimumAge) << std::endl;
+    std::cout << title << " description is : " << filmDescription << std::endl;
+    std::cout << title << " director is : " << filmDirector << std::endl;
+    if (mainActors.size() > 0)
     {
-        std::cout << mainActors.at(i) << std::endl;
+        mainActors.size() == 0 ? std::cout << "Main actors is : " : std::cout << "Main actors are : ";
+        for(uint8_t i = 0; i < mainActors.size(); i++)
+        {
+            std::cout << mainActors.at(i) << std::endl;
+        }
     }
-    std::cout << "Average movie rating is : " << rating << std::endl;
+    if (countOfRating > 0)
+    {
+        std::cout << "Average" << title << " rating is : " << rating << std::endl;
+    }
+    std::cout << std::endl;
 }

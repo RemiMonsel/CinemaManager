@@ -32,9 +32,10 @@ class Film {
 
     public:
         //constructors
-        Film();
-        //destructors
-        ~Film();
+        Film(std::string movieTitle, uint8_t movieDuration, std::string movieGenre);
+        Film(std::string movieTitle, uint8_t movieDuration, std::string filmGenre, Date movieReleaseDate,
+           uint8_t movieMinimumAge = 0, std::string myFilmDescription = "No description available", 
+           std::string myFilmDirector = "Unknown Director", std::vector<std::string> myMainActors = {});
 
         /*********************/
         /****** methods ******/
@@ -44,7 +45,7 @@ class Film {
         std::string getTitle();
         uint8_t getDuration();
         std::string getMovieGenre();
-        Date getReleaseDate();
+        std::string getReleaseDate();
         uint8_t getMinimumAge();
         std::string getFilmDescription();
         std::string getFilmDirector();
@@ -55,6 +56,7 @@ class Film {
 
         //setters
         void setRating(uint8_t rating);
+        void setReleaseDate(Date releaseDate);
 
         // Other methods
         void reservePlaces(int8_t numOfPlaces);

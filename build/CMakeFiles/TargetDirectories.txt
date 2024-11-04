@@ -1,0 +1,3 @@
+C:/Users/remim/Documents/ProjetGestionCinema/build/CMakeFiles/cinemaApp.dir
+C:/Users/remim/Documents/ProjetGestionCinema/build/CMakeFiles/edit_cache.dir
+C:/Users/remim/Documents/ProjetGestionCinema/build/CMakeFiles/rebuild_cache.dir

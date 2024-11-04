@@ -84,12 +84,12 @@ clean: CMakeFiles/cinemaApp.dir/clean
 CMakeFiles/cinemaApp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\remim\Documents\ProjetGestionCinema\build\CMakeFiles --progress-num=1,2,3 "Built target cinemaApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\remim\Documents\ProjetGestionCinema\build\CMakeFiles --progress-num=1,2,3,4 "Built target cinemaApp"
 .PHONY : CMakeFiles/cinemaApp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cinemaApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\remim\Documents\ProjetGestionCinema\build\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\remim\Documents\ProjetGestionCinema\build\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/cinemaApp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\remim\Documents\ProjetGestionCinema\build\CMakeFiles 0
 .PHONY : CMakeFiles/cinemaApp.dir/rule

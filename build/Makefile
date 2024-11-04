@@ -152,6 +152,30 @@ src/cinema/Film.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/src/cinema/Film.cpp.s
 .PHONY : src/cinema/Film.cpp.s
 
+src/cinema/Room.obj: src/cinema/Room.cpp.obj
+.PHONY : src/cinema/Room.obj
+
+# target to build an object file
+src/cinema/Room.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/src/cinema/Room.cpp.obj
+.PHONY : src/cinema/Room.cpp.obj
+
+src/cinema/Room.i: src/cinema/Room.cpp.i
+.PHONY : src/cinema/Room.i
+
+# target to preprocess a source file
+src/cinema/Room.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/src/cinema/Room.cpp.i
+.PHONY : src/cinema/Room.cpp.i
+
+src/cinema/Room.s: src/cinema/Room.cpp.s
+.PHONY : src/cinema/Room.s
+
+# target to generate assembly for a file
+src/cinema/Room.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/src/cinema/Room.cpp.s
+.PHONY : src/cinema/Room.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... src/cinema/Film.obj
 	@echo ... src/cinema/Film.i
 	@echo ... src/cinema/Film.s
+	@echo ... src/cinema/Room.obj
+	@echo ... src/cinema/Room.i
+	@echo ... src/cinema/Room.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

@@ -1,11 +1,11 @@
-#ifndef SALLE_H
-#define SALLE_H
+#ifndef ROOM_H
+#define ROOM_H
 
 #include <cstdint> // declared to use uint8_t
 #include <string>
 #include <vector>
 
-class Salle {
+class Room {
     
     private :
         /**********************/

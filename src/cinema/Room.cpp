@@ -1,55 +1,55 @@
-#include "../../include/cinema/Salle.h"
+#include "../../include/cinema/Room.h"
 
 
         //constructors
-        Salle::Salle(){}
+        Room::Room(){}
 
         /*********************/
         /****** methods ******/
         /*********************/
 
         //getters
-        uint8_t Salle::getIdRoom()
+        uint8_t Room::getIdRoom()
         {
             return idRoom;
         }
-        std::string Salle::getRoomName()
+        std::string Room::getRoomName()
         {
             return roomName;
         }
-        uint16_t Salle::getSeatCapacity()
+        uint16_t Room::getSeatCapacity()
         {
             return seatCapacity;
         }
-        std::vector<std::string> Salle::getEquipments()
+        std::vector<std::string> Room::getEquipments()
         {
             return equipments;
         }
-        std::string Salle::getActualMovie()
+        std::string Room::getActualMovie()
         {
             return actualMovie;
         }
 
         //setters
-        void Salle::setRoomName(std::string name)
+        void Room::setRoomName(std::string name)
         {
             roomName = name;
         }
-        void Salle::setSeatCapacity(uint8_t capacity)
+        void Room::setSeatCapacity(uint8_t capacity)
         {
             seatCapacity = capacity;
         }
-        void Salle::setActualMovie(std::string movie)
+        void Room::setActualMovie(std::string movie)
         {
             actualMovie = movie;
         }
 
         //other methods
-        void Salle::addEquipments(std::string equipment)
+        void Room::addEquipments(std::string equipment)
         {
             equipments.push_back(equipment);
         }
-        void Salle::removeEquipments(std::string equipment)
+        void Room::removeEquipments(std::string equipment)
         {
             for(uint8_t i = 0; i < equipments.size(); i++)
             {
@@ -60,7 +60,7 @@
                 }
             }
         }
-        bool Salle::isAvailable()
+        bool Room::isAvailable()
         {
             return (actualMovie == "" ? false : true);
         }

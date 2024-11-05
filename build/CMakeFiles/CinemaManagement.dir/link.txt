@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\CinemaManagement.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\CinemaManagement.dir/objects.a @CMakeFiles\CinemaManagement.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\CinemaManagement.dir/objects.a -Wl,--no-whole-archive -o CinemaManagement.exe -Wl,--out-implib,libCinemaManagement.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\CinemaManagement.dir\linkLibs.rsp

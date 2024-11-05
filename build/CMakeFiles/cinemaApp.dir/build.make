@@ -116,11 +116,43 @@ CMakeFiles/cinemaApp.dir/src/cinema/Room.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cinemaApp.dir/src/cinema/Room.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\remim\Documents\ProjetGestionCinema\src\cinema\Room.cpp -o CMakeFiles\cinemaApp.dir\src\cinema\Room.cpp.s
 
+CMakeFiles/cinemaApp.dir/src/cinema/Client.cpp.obj: CMakeFiles/cinemaApp.dir/flags.make
+CMakeFiles/cinemaApp.dir/src/cinema/Client.cpp.obj: CMakeFiles/cinemaApp.dir/includes_CXX.rsp
+CMakeFiles/cinemaApp.dir/src/cinema/Client.cpp.obj: C:/Users/remim/Documents/ProjetGestionCinema/src/cinema/Client.cpp
+CMakeFiles/cinemaApp.dir/src/cinema/Client.cpp.obj: CMakeFiles/cinemaApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\remim\Documents\ProjetGestionCinema\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cinemaApp.dir/src/cinema/Client.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cinemaApp.dir/src/cinema/Client.cpp.obj -MF CMakeFiles\cinemaApp.dir\src\cinema\Client.cpp.obj.d -o CMakeFiles\cinemaApp.dir\src\cinema\Client.cpp.obj -c C:\Users\remim\Documents\ProjetGestionCinema\src\cinema\Client.cpp
+
+CMakeFiles/cinemaApp.dir/src/cinema/Client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cinemaApp.dir/src/cinema/Client.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\remim\Documents\ProjetGestionCinema\src\cinema\Client.cpp > CMakeFiles\cinemaApp.dir\src\cinema\Client.cpp.i
+
+CMakeFiles/cinemaApp.dir/src/cinema/Client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cinemaApp.dir/src/cinema/Client.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\remim\Documents\ProjetGestionCinema\src\cinema\Client.cpp -o CMakeFiles\cinemaApp.dir\src\cinema\Client.cpp.s
+
+CMakeFiles/cinemaApp.dir/src/cinema/Ticket.cpp.obj: CMakeFiles/cinemaApp.dir/flags.make
+CMakeFiles/cinemaApp.dir/src/cinema/Ticket.cpp.obj: CMakeFiles/cinemaApp.dir/includes_CXX.rsp
+CMakeFiles/cinemaApp.dir/src/cinema/Ticket.cpp.obj: C:/Users/remim/Documents/ProjetGestionCinema/src/cinema/Ticket.cpp
+CMakeFiles/cinemaApp.dir/src/cinema/Ticket.cpp.obj: CMakeFiles/cinemaApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\remim\Documents\ProjetGestionCinema\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cinemaApp.dir/src/cinema/Ticket.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cinemaApp.dir/src/cinema/Ticket.cpp.obj -MF CMakeFiles\cinemaApp.dir\src\cinema\Ticket.cpp.obj.d -o CMakeFiles\cinemaApp.dir\src\cinema\Ticket.cpp.obj -c C:\Users\remim\Documents\ProjetGestionCinema\src\cinema\Ticket.cpp
+
+CMakeFiles/cinemaApp.dir/src/cinema/Ticket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cinemaApp.dir/src/cinema/Ticket.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\remim\Documents\ProjetGestionCinema\src\cinema\Ticket.cpp > CMakeFiles\cinemaApp.dir\src\cinema\Ticket.cpp.i
+
+CMakeFiles/cinemaApp.dir/src/cinema/Ticket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cinemaApp.dir/src/cinema/Ticket.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\remim\Documents\ProjetGestionCinema\src\cinema\Ticket.cpp -o CMakeFiles\cinemaApp.dir\src\cinema\Ticket.cpp.s
+
 # Object files for target cinemaApp
 cinemaApp_OBJECTS = \
 "CMakeFiles/cinemaApp.dir/src/main.cpp.obj" \
 "CMakeFiles/cinemaApp.dir/src/cinema/Film.cpp.obj" \
-"CMakeFiles/cinemaApp.dir/src/cinema/Room.cpp.obj"
+"CMakeFiles/cinemaApp.dir/src/cinema/Room.cpp.obj" \
+"CMakeFiles/cinemaApp.dir/src/cinema/Client.cpp.obj" \
+"CMakeFiles/cinemaApp.dir/src/cinema/Ticket.cpp.obj"
 
 # External object files for target cinemaApp
 cinemaApp_EXTERNAL_OBJECTS =
@@ -128,11 +160,13 @@ cinemaApp_EXTERNAL_OBJECTS =
 cinemaApp.exe: CMakeFiles/cinemaApp.dir/src/main.cpp.obj
 cinemaApp.exe: CMakeFiles/cinemaApp.dir/src/cinema/Film.cpp.obj
 cinemaApp.exe: CMakeFiles/cinemaApp.dir/src/cinema/Room.cpp.obj
+cinemaApp.exe: CMakeFiles/cinemaApp.dir/src/cinema/Client.cpp.obj
+cinemaApp.exe: CMakeFiles/cinemaApp.dir/src/cinema/Ticket.cpp.obj
 cinemaApp.exe: CMakeFiles/cinemaApp.dir/build.make
 cinemaApp.exe: CMakeFiles/cinemaApp.dir/linkLibs.rsp
 cinemaApp.exe: CMakeFiles/cinemaApp.dir/objects1.rsp
 cinemaApp.exe: CMakeFiles/cinemaApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\remim\Documents\ProjetGestionCinema\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable cinemaApp.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\remim\Documents\ProjetGestionCinema\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable cinemaApp.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\cinemaApp.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

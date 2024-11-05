@@ -1,15 +1,11 @@
 #ifndef FILM_H
 #define FILM_H
 
+#include "../../commonLibrary/GenericLib.h"
+
 #include <cstdint> // declared to use uint8_t
 #include <string>
 #include <vector>
-
-struct Date {
-    uint8_t day;
-    uint8_t month;
-    uint16_t year;
-};
 
 class Film {
     
@@ -20,7 +16,7 @@ class Film {
         std::string title;
         uint8_t duration;
         std::string movieGenre;
-        Date releaseDate;
+        DateStruct releaseDate;
         uint8_t minimumAge;
         std::string filmDescription;
         std::string filmDirector;
@@ -33,7 +29,7 @@ class Film {
     public:
         //constructors
         Film(std::string movieTitle, uint8_t movieDuration, std::string movieGenre);
-        Film(std::string movieTitle, uint8_t movieDuration, std::string filmGenre, Date movieReleaseDate,
+        Film(std::string movieTitle, uint8_t movieDuration, std::string filmGenre, DateStruct movieReleaseDate,
            uint8_t movieMinimumAge = 0, std::string myFilmDescription = "No description available", 
            std::string myFilmDirector = "Unknown Director", std::vector<std::string> myMainActors = {});
 
@@ -56,7 +52,7 @@ class Film {
 
         //setters
         void setRating(uint8_t rating);
-        void setReleaseDate(Date releaseDate);
+        void setReleaseDate(DateStruct releaseDate);
 
         // Other methods
         void reservePlaces(int8_t numOfPlaces);

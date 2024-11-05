@@ -59,5 +59,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/cinemaApp.dir/DependInfo.cmake"
+  "CMakeFiles/commonLibrary.dir/DependInfo.cmake"
+  "CMakeFiles/CinemaManagement.dir/DependInfo.cmake"
   )

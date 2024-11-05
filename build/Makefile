@@ -116,24 +116,85 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cinemaApp
+# Target rules for targets named commonLibrary
 
 # Build rule for target.
-cinemaApp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 cinemaApp
-.PHONY : cinemaApp
+commonLibrary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 commonLibrary
+.PHONY : commonLibrary
 
 # fast build rule for target.
-cinemaApp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/build
-.PHONY : cinemaApp/fast
+commonLibrary/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\commonLibrary.dir\build.make CMakeFiles/commonLibrary.dir/build
+.PHONY : commonLibrary/fast
+
+#=============================================================================
+# Target rules for targets named CinemaManagement
+
+# Build rule for target.
+CinemaManagement: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CinemaManagement
+.PHONY : CinemaManagement
+
+# fast build rule for target.
+CinemaManagement/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/build
+.PHONY : CinemaManagement/fast
+
+commonLibrary/GenericLib.obj: commonLibrary/GenericLib.cpp.obj
+.PHONY : commonLibrary/GenericLib.obj
+
+# target to build an object file
+commonLibrary/GenericLib.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\commonLibrary.dir\build.make CMakeFiles/commonLibrary.dir/commonLibrary/GenericLib.cpp.obj
+.PHONY : commonLibrary/GenericLib.cpp.obj
+
+commonLibrary/GenericLib.i: commonLibrary/GenericLib.cpp.i
+.PHONY : commonLibrary/GenericLib.i
+
+# target to preprocess a source file
+commonLibrary/GenericLib.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\commonLibrary.dir\build.make CMakeFiles/commonLibrary.dir/commonLibrary/GenericLib.cpp.i
+.PHONY : commonLibrary/GenericLib.cpp.i
+
+commonLibrary/GenericLib.s: commonLibrary/GenericLib.cpp.s
+.PHONY : commonLibrary/GenericLib.s
+
+# target to generate assembly for a file
+commonLibrary/GenericLib.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\commonLibrary.dir\build.make CMakeFiles/commonLibrary.dir/commonLibrary/GenericLib.cpp.s
+.PHONY : commonLibrary/GenericLib.cpp.s
+
+src/cinema/Client.obj: src/cinema/Client.cpp.obj
+.PHONY : src/cinema/Client.obj
+
+# target to build an object file
+src/cinema/Client.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/src/cinema/Client.cpp.obj
+.PHONY : src/cinema/Client.cpp.obj
+
+src/cinema/Client.i: src/cinema/Client.cpp.i
+.PHONY : src/cinema/Client.i
+
+# target to preprocess a source file
+src/cinema/Client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/src/cinema/Client.cpp.i
+.PHONY : src/cinema/Client.cpp.i
+
+src/cinema/Client.s: src/cinema/Client.cpp.s
+.PHONY : src/cinema/Client.s
+
+# target to generate assembly for a file
+src/cinema/Client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/src/cinema/Client.cpp.s
+.PHONY : src/cinema/Client.cpp.s
 
 src/cinema/Film.obj: src/cinema/Film.cpp.obj
 .PHONY : src/cinema/Film.obj
 
 # target to build an object file
 src/cinema/Film.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/src/cinema/Film.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/src/cinema/Film.cpp.obj
 .PHONY : src/cinema/Film.cpp.obj
 
 src/cinema/Film.i: src/cinema/Film.cpp.i
@@ -141,7 +202,7 @@ src/cinema/Film.i: src/cinema/Film.cpp.i
 
 # target to preprocess a source file
 src/cinema/Film.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/src/cinema/Film.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/src/cinema/Film.cpp.i
 .PHONY : src/cinema/Film.cpp.i
 
 src/cinema/Film.s: src/cinema/Film.cpp.s
@@ -149,7 +210,7 @@ src/cinema/Film.s: src/cinema/Film.cpp.s
 
 # target to generate assembly for a file
 src/cinema/Film.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/src/cinema/Film.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/src/cinema/Film.cpp.s
 .PHONY : src/cinema/Film.cpp.s
 
 src/cinema/Room.obj: src/cinema/Room.cpp.obj
@@ -157,7 +218,7 @@ src/cinema/Room.obj: src/cinema/Room.cpp.obj
 
 # target to build an object file
 src/cinema/Room.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/src/cinema/Room.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/src/cinema/Room.cpp.obj
 .PHONY : src/cinema/Room.cpp.obj
 
 src/cinema/Room.i: src/cinema/Room.cpp.i
@@ -165,7 +226,7 @@ src/cinema/Room.i: src/cinema/Room.cpp.i
 
 # target to preprocess a source file
 src/cinema/Room.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/src/cinema/Room.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/src/cinema/Room.cpp.i
 .PHONY : src/cinema/Room.cpp.i
 
 src/cinema/Room.s: src/cinema/Room.cpp.s
@@ -173,15 +234,39 @@ src/cinema/Room.s: src/cinema/Room.cpp.s
 
 # target to generate assembly for a file
 src/cinema/Room.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/src/cinema/Room.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/src/cinema/Room.cpp.s
 .PHONY : src/cinema/Room.cpp.s
+
+src/cinema/Ticket.obj: src/cinema/Ticket.cpp.obj
+.PHONY : src/cinema/Ticket.obj
+
+# target to build an object file
+src/cinema/Ticket.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/src/cinema/Ticket.cpp.obj
+.PHONY : src/cinema/Ticket.cpp.obj
+
+src/cinema/Ticket.i: src/cinema/Ticket.cpp.i
+.PHONY : src/cinema/Ticket.i
+
+# target to preprocess a source file
+src/cinema/Ticket.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/src/cinema/Ticket.cpp.i
+.PHONY : src/cinema/Ticket.cpp.i
+
+src/cinema/Ticket.s: src/cinema/Ticket.cpp.s
+.PHONY : src/cinema/Ticket.s
+
+# target to generate assembly for a file
+src/cinema/Ticket.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/src/cinema/Ticket.cpp.s
+.PHONY : src/cinema/Ticket.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -189,7 +274,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -197,7 +282,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -208,13 +293,23 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... cinemaApp
+	@echo ... CinemaManagement
+	@echo ... commonLibrary
+	@echo ... commonLibrary/GenericLib.obj
+	@echo ... commonLibrary/GenericLib.i
+	@echo ... commonLibrary/GenericLib.s
+	@echo ... src/cinema/Client.obj
+	@echo ... src/cinema/Client.i
+	@echo ... src/cinema/Client.s
 	@echo ... src/cinema/Film.obj
 	@echo ... src/cinema/Film.i
 	@echo ... src/cinema/Film.s
 	@echo ... src/cinema/Room.obj
 	@echo ... src/cinema/Room.i
 	@echo ... src/cinema/Room.s
+	@echo ... src/cinema/Ticket.obj
+	@echo ... src/cinema/Ticket.i
+	@echo ... src/cinema/Ticket.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

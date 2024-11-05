@@ -1,6 +1,9 @@
 #include <iostream>
+#include "../commonLibrary/GenericLib.h"
 #include "../include/cinema/Film.h"
 #include "../include/cinema/Room.h"
+#include "../include/cinema/Client.h"
+#include "../include/cinema/Ticket.h"
 
 int main()
 {
@@ -29,6 +32,21 @@ int main()
 
     roomA.setActualMovie(spidermanMovie.getTitle());
     roomA.showDetails();
+
+    /**********************************/
+    /***** Creation of new client *****/
+    /**********************************/
+    Client client1("Dupont","jean.dupont@hotmail.com", {12,10,1950});
+    client1.showDetails();
+
+    /**********************************/
+    /***** Creation of new ticket *****/
+    /**********************************/
+    Ticket ticket1(&roomA, &spidermanMovie, {10, 9, 2024, 10, 50}, {3, 9, 2024, 19, 48}, 22U, 12.5F);
+    ticket1.showDetails();
+
+    Ticket ticket2(&roomA, &spidermanMovie, {10, 9, 2024, 10, 50}, {2, 9, 2024, 16, 12}, 22U, 12.5F);
+    ticket2.showDetails();
 
     return 0;
 }

@@ -18,7 +18,7 @@ Film::Film(std::string movieTitle, uint8_t movieDuration, std::string filmGenre)
     movieGenre = filmGenre;
 }
 
-Film::Film(std::string movieTitle, uint8_t movieDuration, std::string filmGenre, Date movieReleaseDate,
+Film::Film(std::string movieTitle, uint8_t movieDuration, std::string filmGenre, DateStruct movieReleaseDate,
            uint8_t movieMinimumAge, std::string myFilmDescription, std::string myFilmDirector, std::vector<std::string> myMainActors){
     title = movieTitle;
     duration = movieDuration;
@@ -101,7 +101,7 @@ void Film::setRating(uint8_t myRating)
     rating = (rating + myRating)/ countOfRating;
 }
 
-void Film::setReleaseDate(Date myReleaseDate)
+void Film::setReleaseDate(DateStruct myReleaseDate)
 {
     releaseDate = myReleaseDate;
 }

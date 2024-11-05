@@ -2,7 +2,6 @@
 
 #include "../../include/cinema/Room.h"
 
-
 //constructors
 Room::Room(uint8_t myIdRoom, std::string myRoomName, uint16_t mySeatCapacity, std::vector<std::string> myEquipments, std::string myActualMovie)
 {
@@ -11,6 +10,13 @@ Room::Room(uint8_t myIdRoom, std::string myRoomName, uint16_t mySeatCapacity, st
     seatCapacity = mySeatCapacity;
     equipments = myEquipments;
     actualMovie = myActualMovie;
+    for(uint8_t i = 0; i < 10U; i++)
+    {
+        for (uint8_t j = 0; j < 20U; j++)
+        {
+            seatPosition[i][j] = true;
+        }
+    }
 }
 
 /*********************/
@@ -72,6 +78,11 @@ void Room::removeEquipments(std::string equipment)
 bool Room::isAvailable()
 {
     return (actualMovie == "None" ? true : false);
+}
+
+bool Room::isSeatAvailable(bool seatPositionAvailable)
+{
+    return seatPositionAvailable;
 }
 
 void Room::showDetails()

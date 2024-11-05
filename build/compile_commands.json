@@ -1,20 +1,38 @@
 [
 {
   "directory": "C:/Users/remim/Documents/ProjetGestionCinema/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/cinemaApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\cinemaApp.dir\\src\\main.cpp.obj -c C:\\Users\\remim\\Documents\\ProjetGestionCinema\\src\\main.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/commonLibrary.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\commonLibrary.dir\\commonLibrary\\GenericLib.cpp.obj -c C:\\Users\\remim\\Documents\\ProjetGestionCinema\\commonLibrary\\GenericLib.cpp",
+  "file": "C:/Users/remim/Documents/ProjetGestionCinema/commonLibrary/GenericLib.cpp",
+  "output": "CMakeFiles/commonLibrary.dir/commonLibrary/GenericLib.cpp.obj"
+},
+{
+  "directory": "C:/Users/remim/Documents/ProjetGestionCinema/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/CinemaManagement.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CinemaManagement.dir\\src\\main.cpp.obj -c C:\\Users\\remim\\Documents\\ProjetGestionCinema\\src\\main.cpp",
   "file": "C:/Users/remim/Documents/ProjetGestionCinema/src/main.cpp",
-  "output": "CMakeFiles/cinemaApp.dir/src/main.cpp.obj"
+  "output": "CMakeFiles/CinemaManagement.dir/src/main.cpp.obj"
 },
 {
   "directory": "C:/Users/remim/Documents/ProjetGestionCinema/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/cinemaApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\cinemaApp.dir\\src\\cinema\\Film.cpp.obj -c C:\\Users\\remim\\Documents\\ProjetGestionCinema\\src\\cinema\\Film.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/CinemaManagement.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CinemaManagement.dir\\src\\cinema\\Film.cpp.obj -c C:\\Users\\remim\\Documents\\ProjetGestionCinema\\src\\cinema\\Film.cpp",
   "file": "C:/Users/remim/Documents/ProjetGestionCinema/src/cinema/Film.cpp",
-  "output": "CMakeFiles/cinemaApp.dir/src/cinema/Film.cpp.obj"
+  "output": "CMakeFiles/CinemaManagement.dir/src/cinema/Film.cpp.obj"
 },
 {
   "directory": "C:/Users/remim/Documents/ProjetGestionCinema/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/cinemaApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\cinemaApp.dir\\src\\cinema\\Room.cpp.obj -c C:\\Users\\remim\\Documents\\ProjetGestionCinema\\src\\cinema\\Room.cpp",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/CinemaManagement.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CinemaManagement.dir\\src\\cinema\\Room.cpp.obj -c C:\\Users\\remim\\Documents\\ProjetGestionCinema\\src\\cinema\\Room.cpp",
   "file": "C:/Users/remim/Documents/ProjetGestionCinema/src/cinema/Room.cpp",
-  "output": "CMakeFiles/cinemaApp.dir/src/cinema/Room.cpp.obj"
+  "output": "CMakeFiles/CinemaManagement.dir/src/cinema/Room.cpp.obj"
+},
+{
+  "directory": "C:/Users/remim/Documents/ProjetGestionCinema/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/CinemaManagement.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CinemaManagement.dir\\src\\cinema\\Client.cpp.obj -c C:\\Users\\remim\\Documents\\ProjetGestionCinema\\src\\cinema\\Client.cpp",
+  "file": "C:/Users/remim/Documents/ProjetGestionCinema/src/cinema/Client.cpp",
+  "output": "CMakeFiles/CinemaManagement.dir/src/cinema/Client.cpp.obj"
+},
+{
+  "directory": "C:/Users/remim/Documents/ProjetGestionCinema/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/CinemaManagement.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CinemaManagement.dir\\src\\cinema\\Ticket.cpp.obj -c C:\\Users\\remim\\Documents\\ProjetGestionCinema\\src\\cinema\\Ticket.cpp",
+  "file": "C:/Users/remim/Documents/ProjetGestionCinema/src/cinema/Ticket.cpp",
+  "output": "CMakeFiles/CinemaManagement.dir/src/cinema/Ticket.cpp.obj"
 }
 ]

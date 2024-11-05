@@ -62,11 +62,13 @@ CMAKE_BINARY_DIR = C:\Users\remim\Documents\ProjetGestionCinema\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/cinemaApp.dir/all
+all: CMakeFiles/commonLibrary.dir/all
+all: CMakeFiles/CinemaManagement.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/cinemaApp.dir/codegen
+codegen: CMakeFiles/commonLibrary.dir/codegen
+codegen: CMakeFiles/CinemaManagement.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -74,39 +76,71 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/cinemaApp.dir/clean
+clean: CMakeFiles/commonLibrary.dir/clean
+clean: CMakeFiles/CinemaManagement.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/cinemaApp.dir
+# Target rules for target CMakeFiles/commonLibrary.dir
 
 # All Build rule for target.
-CMakeFiles/cinemaApp.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\remim\Documents\ProjetGestionCinema\build\CMakeFiles --progress-num=1,2,3,4 "Built target cinemaApp"
-.PHONY : CMakeFiles/cinemaApp.dir/all
+CMakeFiles/commonLibrary.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\commonLibrary.dir\build.make CMakeFiles/commonLibrary.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\commonLibrary.dir\build.make CMakeFiles/commonLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\remim\Documents\ProjetGestionCinema\build\CMakeFiles --progress-num=7,8 "Built target commonLibrary"
+.PHONY : CMakeFiles/commonLibrary.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/cinemaApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\remim\Documents\ProjetGestionCinema\build\CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/cinemaApp.dir/all
+CMakeFiles/commonLibrary.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\remim\Documents\ProjetGestionCinema\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/commonLibrary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\remim\Documents\ProjetGestionCinema\build\CMakeFiles 0
-.PHONY : CMakeFiles/cinemaApp.dir/rule
+.PHONY : CMakeFiles/commonLibrary.dir/rule
 
 # Convenience name for target.
-cinemaApp: CMakeFiles/cinemaApp.dir/rule
-.PHONY : cinemaApp
+commonLibrary: CMakeFiles/commonLibrary.dir/rule
+.PHONY : commonLibrary
 
 # codegen rule for target.
-CMakeFiles/cinemaApp.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/codegen
-.PHONY : CMakeFiles/cinemaApp.dir/codegen
+CMakeFiles/commonLibrary.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\commonLibrary.dir\build.make CMakeFiles/commonLibrary.dir/codegen
+.PHONY : CMakeFiles/commonLibrary.dir/codegen
 
 # clean rule for target.
-CMakeFiles/cinemaApp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cinemaApp.dir\build.make CMakeFiles/cinemaApp.dir/clean
-.PHONY : CMakeFiles/cinemaApp.dir/clean
+CMakeFiles/commonLibrary.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\commonLibrary.dir\build.make CMakeFiles/commonLibrary.dir/clean
+.PHONY : CMakeFiles/commonLibrary.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/CinemaManagement.dir
+
+# All Build rule for target.
+CMakeFiles/CinemaManagement.dir/all: CMakeFiles/commonLibrary.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\remim\Documents\ProjetGestionCinema\build\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target CinemaManagement"
+.PHONY : CMakeFiles/CinemaManagement.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/CinemaManagement.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\remim\Documents\ProjetGestionCinema\build\CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/CinemaManagement.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\remim\Documents\ProjetGestionCinema\build\CMakeFiles 0
+.PHONY : CMakeFiles/CinemaManagement.dir/rule
+
+# Convenience name for target.
+CinemaManagement: CMakeFiles/CinemaManagement.dir/rule
+.PHONY : CinemaManagement
+
+# codegen rule for target.
+CMakeFiles/CinemaManagement.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/codegen
+.PHONY : CMakeFiles/CinemaManagement.dir/codegen
+
+# clean rule for target.
+CMakeFiles/CinemaManagement.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CinemaManagement.dir\build.make CMakeFiles/CinemaManagement.dir/clean
+.PHONY : CMakeFiles/CinemaManagement.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

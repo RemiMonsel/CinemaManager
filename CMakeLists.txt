@@ -8,13 +8,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)     # Make required the standard C++
 # Add inclusion directories
 include_directories(include)            # Header folder
 
-# Add executable
-add_executable(cinemaApp src/main.cpp)  # Name of the executable
+add_library(commonLibrary commonLibrary/GenericLib.cpp)
 
-# Add source files
-target_sources(cinemaApp PRIVATE
-    src/cinema/Film.cpp                 # Add Film class as a source file
-)
-target_sources(cinemaApp PRIVATE
-    src/cinema/Room.cpp                 # Add Room class as a source file
-)
+# Add executable
+add_executable(CinemaManagement src/main.cpp src/cinema/Film.cpp src/cinema/Room.cpp src/cinema/Client.cpp src/cinema/Ticket.cpp) # Add main and classes files
+
+target_link_libraries(CinemaManagement commonLibrary)    # Executable link for GenericLib library

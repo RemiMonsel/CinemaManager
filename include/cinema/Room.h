@@ -18,6 +18,7 @@ class Room {
         std::string actualMovie;
 
     public:
+        bool seatPosition[10][20];
         //constructors
         Room(uint8_t myIdRoom, std::string myRoomName, uint16_t mySeatCapacity, std::vector<std::string> myEquipments = {}, std::string myActualMovie = "None");
 
@@ -41,6 +42,7 @@ class Room {
         void addEquipments(std::string equipment);
         void removeEquipments(std::string equipment);
         bool isAvailable();
+        bool isSeatAvailable(bool seatPositionAvailable);
         void showDetails();
 };
 

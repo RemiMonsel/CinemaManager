@@ -1,0 +1,2 @@
+C:\msys64\ucrt64\bin\ar.exe qc libcommonLibrary.a CMakeFiles/commonLibrary.dir/commonLibrary/GenericLib.cpp.obj
+C:\msys64\ucrt64\bin\ranlib.exe libcommonLibrary.a
